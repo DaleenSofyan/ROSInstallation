@@ -14,9 +14,9 @@
 <h2>Step 2 — Add official ROS keyring</h2>
 <p>Next, we will need to add the ROS Noetic keyring to get authenticated ROS packages to install on your Ubuntu, There are two ways to ad the official key, and you can choose any of them.</p>
 
-The first is to use apt-key to add the key to be downloaded from the Ubuntu key server. by writing the command below:
-  
-  <code>sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</code>
+<p>The first is to use apt-key to add the key to be downloaded from the Ubuntu key server. by writing the command below:</p>
+
+      <code>sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</code>
    
 The second way is to use <code>curl</code> to download the official ROS key and add it locally. To do this paste the command below:
       
@@ -27,7 +27,7 @@ The second way is to use <code>curl</code> to download the official ROS key and 
 <h2> Step 3 — Update ROS package index </h2>
 <p>Next, we will need to get the ROS Noetic package information from the repository we just added using apt update, by writing this command</p>
   
-  <code>sudo apt update</code>  
+    <code>sudo apt update</code>  
   
 
 <h2>Step 4 — Install ROS Noetic Desktop Full</h2>
