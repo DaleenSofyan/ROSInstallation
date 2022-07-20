@@ -8,8 +8,10 @@
 <p>To install Noetic on Ubuntu 20.04, first we will need to add the official ROS Noetic repo to <code>sources.list</code> by running the following command:</p>
       
     echo "deb http://packages.ros.org/ros/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/ros-focal.list
+    
+<p>After running the command above, you will see the output: <code>deb http://packages.ros.org/ros/ubuntu focal main</code>.</p>
 
-  
+
 
 <h2>Step 2 — Add official ROS keyring</h2>
 <p>Next, we will need to add the ROS Noetic keyring to get authenticated ROS packages to install on your Ubuntu, There are two ways to ad the official key, and you can choose any of them.</p>
@@ -17,6 +19,9 @@
 <p>The first is to use apt-key to add the key to be downloaded from the Ubuntu key server. by writing the command below:</p>
 
     sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+    
+If you see the following output starting with executing, it means the key is successfully added:
+
 
    
 The second way is to use <code>curl</code> to download the official ROS key and add it locally. To do this paste the command below:
